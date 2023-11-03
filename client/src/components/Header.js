@@ -17,7 +17,8 @@ const Header = () => {
   return (
     <header>
       <Nav />
-        <p>{ !data ? "Loading..." : data }</p>
+      <p>{ !data ? "Loading..." : data }</p>
+      <hr />
     </header>
   )
 }
