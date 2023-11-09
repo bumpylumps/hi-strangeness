@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Header from './Header'
-import ContactForm from './ContactForm'
-import StaticPhotoBanner from './StaticPhotoBanner'
-import Footer from './Footer'
+import Header from '../components/Header'
+import ContactForm from '../components/ContactForm'
+import StaticPhotoBanner from '../components/StaticPhotoBanner'
+import Footer from '../components/Footer'
 
 const About = () => {
   return (
-    <>
+    <div className='About'>
         <Header />
         
         <h1>About Page</h1>
@@ -19,7 +19,7 @@ const About = () => {
         <ContactForm />
         <br />
         <Footer />
-    </>
+    </div>
   )
 }
 

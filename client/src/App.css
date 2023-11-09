@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* Globals */
+* {
+  box-sizing: border-box;
+  background-color: #11061e;
+  color: #fffe5a;
+
+  font-size: 62.5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* Pages */
+
+
+
+/* Home */
+
+.Home {
+  margin: 0 2%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Home h1, h2, h3, h4 {
+  font-size: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.hero {
+  width: 100%;
+  margin: 0 auto; 
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.heroParagraph {
+  width: 50%;
+  margin-left: 2%;
+
+  font-size: 1.8rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.portrait{
+  height:400px;
+  width: 500px;
 }
+
+
+/* About */
+
+.About {
+  margin: 0 2%;
+}
+
+
+/* Video */
+
+.Video {
+  margin: 0 2%;
+}
+
+
+
+/* Components */
+
+
+/* Nav menu */
+
+.navContainer{
+  width: 100%;
+  height: 60px;
+
+  display: flex;  
+  justify-content: space-between;
+}
+
+.linksContainer {
+  width: 10%;
+  margin-right: 2%;
+}
+
+.linksContainer ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.linksContainer li {
+  margin-right: 5%;
+  
+  font-size: 3rem;
+  
+  list-style: none;
+}
+
+.linksContainer li a { 
+  text-decoration: none;
+}
+
+.linksContainer li a:hover {
+  color: #f3d92d
+}
+

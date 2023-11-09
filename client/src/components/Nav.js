@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <section>
+    <section className='navContainer'>
         <section>
             <img src="" />
         </section>
-        <section>
+        <section className='linksContainer'>
             <ul>
               <li>
                 <Link to="/">Home</Link>

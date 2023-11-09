@@ -10,9 +10,9 @@ import {
 } from "react-router-dom";
 
 
-import Home from './components/Home'
-import About from './components/About'
-import Videos from './components/Videos'
+import Home from './pages/Home'
+import About from './pages/About'
+import Videos from './pages/Videos'
 
 
 function App() {
