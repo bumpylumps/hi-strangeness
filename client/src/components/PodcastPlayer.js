@@ -3,10 +3,9 @@ import React from 'react'
 const PodcastPlayer = () => {
   return (
     <div className='podcast-player'>
-      <h2>Podcast Player Space</h2> 
       <div className='episode-player-container'>
        <img className='episode-player-logo' 
-          src="https://placekitten.com/500/500" 
+          src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" 
           alt="logo" />
         <section className='episode-player-interior'>
 
@@ -26,7 +25,7 @@ const PodcastPlayer = () => {
                   <div className='play-pause-episode'>
                   <input type='image' 
                     alt="play/pause button"
-                    src="https://placekitten.com/50/50"
+                    src=""
                     />
                 </div>
                 </div>

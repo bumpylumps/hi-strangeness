@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <section className='navContainer'>
         <section>
-            <img src="" />
+            <img src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" />
         </section>
         <section className='linksContainer'>
             <ul>
