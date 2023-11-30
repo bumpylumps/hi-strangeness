@@ -3,7 +3,6 @@ import React from 'react'
 const ContactForm = () => {
   return (
     <div>
-      <h3>Contact form </h3>
       <div className='contact-form-container'>
         <h3>Got a Story request or ideas for topics? <br/>
         Let us know!</h3>

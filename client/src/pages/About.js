@@ -9,15 +9,9 @@ const About = () => {
   return (
     <div className='About'>
         <Header />
-        
-        <h1>About Page</h1>
-        <img src="" alt="host portrait" />
-        <p>Lorem ipsum About the host/show</p>
-        <br />
+
         <StaticPhotoBanner />
-        <br/>
         <ContactForm />
-        <br />
         <Footer />
     </div>
   )
