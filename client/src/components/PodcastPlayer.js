@@ -2,7 +2,8 @@ import React from 'react'
 
 const PodcastPlayer = () => {
   return (
-    <div className='podcast-player'>
+    <div className='podcast-player'
+      id="episodes">
       <div className='episode-player-container'>
        <img className='episode-player-logo' 
           src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" 
