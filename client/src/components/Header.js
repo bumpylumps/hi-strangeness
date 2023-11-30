@@ -9,7 +9,6 @@ const Header = () => {
   return (
     <header>
       <Nav />
-      <hr />
     </header>
   )
 }

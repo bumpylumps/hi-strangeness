@@ -91,7 +91,7 @@ header {
   height: 60px;
 
   display: flex;  
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navContainer img {
@@ -157,7 +157,7 @@ header {
 }
 
 .episode-player-interior {
-  outline:2px solid red;
+  /* outline:2px solid red; */
   width: 100%;
 }
 
@@ -208,7 +208,7 @@ header {
 }
 
 .episode{
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
   width: 100%;
   padding: 1% 2%;
   display:flex;
@@ -266,6 +266,13 @@ header {
   height: 100%;
   width: 20%;
   margin: 1% auto;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue; */
   overflow: hidden;
 }
+
+.static-photo-banner li img {
+  height: 100%;
+  width: 100%;
+}
+
+
