@@ -3,6 +3,8 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
+import headerLogo  from '../images/header-logo.JPG'
+
 const Nav = () => {
   return (
     <section className='navContainer'>
@@ -17,6 +19,9 @@ const Nav = () => {
               </li>
               <li>
                 <Link to="/videos">Videos</Link>
+              </li>
+              <li>   
+                <img src={ headerLogo } alt="High strangeness title in graphic font"/>
               </li>
               <li>
                 <HashLink smooth to="/#episodes">Episodes</HashLink>
