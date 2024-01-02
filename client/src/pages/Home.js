@@ -38,7 +38,7 @@ const Home = () => {
 
               <p className='heroParagraph closing'>To get in touch with Steve about appearances, feedback or just to 
               share your own encounters with High Strangeness:  
-              <Link to=""
+              <Link to="mailto: hi.strangeness27@gmail.com"
                 className='emailLink'> hi.strangeness27@gmail.com</Link></p>
             </section>
         </section>
