@@ -35,6 +35,18 @@ module.exports = {
              tag = ETag
          }
 
+
+
+         const episodes = data.map((episode) => {
+            return {
+                title: episode.title,
+                duration: episode.duration,
+                source: episode.audio_url
+            }
+        });
+
+
+
      
          function hourMinEpTime(data){
              data.forEach(episodes => {
@@ -63,7 +75,8 @@ module.exports = {
                  }
              })
          }
-         res.json(data)
+
+         res.json(episodes);
          //hourMinEpTime(data)
      
          

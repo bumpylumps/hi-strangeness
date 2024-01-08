@@ -1,33 +1,22 @@
 import React from 'react'
-
 import Header from '../components/Header'
 import PodcastPlayer from '../components/PodcastPlayer'
 import Footer from '../components/Footer'
 
 
 import { Link } from "react-router-dom";
-import portrait from '../images/armchair-portrait.JPG'
 import StaticPhotoBanner from '../components/StaticPhotoBanner'
 
 
 
 const Home = () => {
   
-  const [data, setData] = React.useState(null);
-
-
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
   
   return (
     <div className='Home'>
-        <Header />
-  
+        <Header />      
+
         <section className='hero'>
-          
             <section>
               <p className='heroParagraph prominent' >Actor and High Strangeness enthusiast 
               <strong> Steve Berg </strong> chats and cheerleads with researchers, investigators, authors, 

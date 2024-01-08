@@ -1,6 +1,25 @@
-import React from 'react'
+import {useState, useEffect } from 'react'
+
 
 const PodcastPlayer = () => {
+
+// grabbing data from backend
+  const [episodes, setEpisodes] = useState([]);
+
+  useEffect(() => {
+    fetch("/podcast")
+      .then((res) => res.json())
+      .then((episodes) => setEpisodes(episodes));
+  }, []);
+
+  const episodeList = episodes.map(episode => {
+    return <li className='episode'>
+              <span>{episode.title}</span>
+              <span>{episode.duration}</span>
+          </li>
+  })
+  
+
   return (
     <div className='podcast-player'
       id="episodes">
@@ -48,12 +67,7 @@ const PodcastPlayer = () => {
           {/* episode list */}
           <div className='episode-list-container'>
             <ul className='episode-list'>
-              <li className='episode'>
-                <span className='episode-number'>Episode Number</span>
-                <span className='episode-title'>Episode Title</span>
-                <span className='episode-duration'>Episode Duration</span>
-                <span className='episode-audio-source' id="episode-source">Episode Audio Source</span>
-              </li>
+              {episodeList}
             </ul>
           </div>
         </section>
