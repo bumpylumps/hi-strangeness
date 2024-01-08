@@ -130,11 +130,11 @@ header {
 
 /* Podcast episode player */
 .podcast-player {
-  outline: 2px solid purple;
   background-color: #69215d;
   width: 82%;
   height: 700px;
   margin: 20% auto;
+  margin-bottom: 2%;
   padding-top: 0.25%;
 }
 
@@ -200,6 +200,8 @@ header {
 .episode-list-container {
   width: 100%;
   height: 61%;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .episode-list {
@@ -209,7 +211,7 @@ header {
 }
 
 .episode{
-  /* outline: 2px solid blue; */
+  border-bottom: 2px solid #69215d;
   width: 100%;
   padding: 1% 2%;
   display:flex;
@@ -218,6 +220,11 @@ header {
 
 .episode span {
   font-size: 2rem;
+}
+
+
+.episode:hover {
+  cursor: grab;
 }
 
 /* Contact Form */
