@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hi, Strangeness</title>
+    	<meta charset="utf-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!--Style links and fonts-->
+        <link rel="stylesheet" href="/assets/css/reset.css">
+		<link rel="stylesheet" href="/assets/css/normalize.css">
+    	<link rel="stylesheet" href="/assets/css/main.css">
+
+		<!--favicon-->
+		<link rel="icon" type="image/x-icon" href="/assets/css/images/favicon.jpg">
+		
+		<!--Font Awesome-->
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+
+    </head>
+
+<!-- Nav  -->
+    <body>
+        <section class='navContainer'>
+
+            <section class='linksContainer'>
+                <ul>
+                  <li>
+                    <a href="/">Home</a>
+                  </li>
+                  <li>
+                    <a href="/about">About</a>
+                  </li>
+                  <li>
+                    <a href="/videos">Videos</a>
+                  </li>
+                  <li>   
+                    <img src=/assets/images/header-logo.JPG alt="High strangeness title in graphic font"/>
+                  </li>
+                  <li>
+                    <a href="/#episodes">Episodes</a>
+                  </li>
+                  <li>
+                    <a href="">Merch</a>
+                  </li>
+                  <li>
+                    <a href="">Patreon</a>
+                  </li>
+                </ul>
+            </section>
+        </section>
+
+
+        <!-- hero  -->
+        <div class='Home'>
+            <Header />      
+    
+            <section class='hero'>
+                <section>
+                  <p class='heroParagraph prominent' >Actor and High Strangeness enthusiast 
+                  <strong> Steve Berg </strong> chats and cheerleads with researchers, investigators, authors, 
+                  artists, and comedians about all things weird  We're talking UFOs, the paranormal, 
+                  outsider art, weird belief systems, the occult, and all that good stuff</p>
+    
+                  <p class='heroParagraph'>Introduction by Eric Edelstein - Produced  by Sandra Mandrell</p>
+    
+                  <p class='heroParagraph closing'>To get in touch with Steve about appearances, feedback or just to 
+                  share your own encounters with High Strangeness:  
+                  <a href="mailto: hi.strangeness27@gmail.com" class='emailLink'> 
+                    hi.strangeness27@gmail.com</a></p>
+                </section>
+            </section>
+
+        
+        <!-- Photo Banner  -->
+        <div class='static-photo-banner-container'>
+           <ul class='static-photo-banner'>
+             <li><img src="/assets/images/armchair-portrait.JPG" alt="photo banner picture" /></li>
+             <li><img src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" alt="photo banner picture" /></li>
+             <li><img src="/assets/images/armchair-portrait.JPG" alt="photo banner picture" /></li>
+             <li><img src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" alt="photo banner picture" /></li>
+           </ul>
+         </div>
+
+        <!-- podcast player  -->
+        <div class='podcast-player'
+            id="episodes">
+        <div class='episode-player-container'>
+         <img class='episode-player-logo' 
+            src="https://storage.buzzsprout.com/variants/g4yldmb2wth0ptfmlzqyq4old55s/5cfec01b44f3e29fae1fb88ade93fc4aecd05b192fbfbc2c2f1daa412b7c1921.jpg" 
+            alt="logo" />
+          <section class='episode-player-interior'>
+  
+  <!-- player timeline + buttons -->
+  
+            <section class='episode-player-block'>
+              <div class='episode-details'>
+                <div id="episode-name" class='episode-name'>Episode Name</div>
+              </div>
+  
+              <div class='episode-player'>
+             
+  
+                <div class='episode-timeline-container'>
+                  <!-- buttons  -->
+                  <div class='episode-player-buttons'>
+                    <div class='play-pause-episode' onclick="playpauseTrack()"">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                  </div>
+                  </div>
+                  
+                  <!-- timeline -->
+                  <div class='episode-timeline-current-time'>00:00</div>
+                  <input class='episode-timeline-slider' 
+                    type="range" 
+                    min={0} 
+                    max={100}
+                    value={0}
+                    onChange={seekTo} 
+                    />
+                  <div class='episode-timeline-total-duration'>00:00</div>
+                </div>
+              </div>
+            </section>
+  
+            <!-- episode list -->
+            <div class='episode-list-container'>
+              <ul class='episode-list'>
+                <% episodes.forEach( el => { %>
+                    <li class="episode" >
+                        <span class="<%= el.title %>" id="episode-title"><%= el.title %></span>
+                        <span class="episode-length"><%= el.duration %></span>
+                        <span class="source" id="episode-source" ><%= el.audio_url %></span>
+                    </li>
+                <% }) %>  
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+    <!-- Footer  -->
+        <div>
+            <hr/>
+            <h3>Footer</h3>
+        </div>
+        
+        
+        <!-- Scripts -->
+        <script src="/assets/js/main.js"></script>
+    </body>
+
+</html>
