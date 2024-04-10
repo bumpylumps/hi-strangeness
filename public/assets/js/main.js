@@ -55,6 +55,7 @@ function select(ep) {
 	document.getElementById('episode-name').style.opacity = 0;
 
 	let src = ep.parentNode.childNodes[5].innerHTML;
+	console.log(src)
 	loadTrack(src)
 	playTrack()
 
