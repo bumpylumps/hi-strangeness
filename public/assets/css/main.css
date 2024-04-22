@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+
+
+
+
 /* Globals */
 * {
     box-sizing: border-box;
     background-color: #11061e;
     color: #fffe5a;
-  
+    
     font-size: 62.5%;
   }
   
+  body {
+    font-family: 'Creepster', serif;
+  }
   
   /* Pages */
   
@@ -31,6 +40,10 @@
     justify-content: flex-start;
   }
   
+  .hero-logo { 
+    height: 500px;
+  }
+
   .heroParagraph {
     width: 90%;
   
@@ -73,8 +86,22 @@
     margin: 0 2%;
   }
   
-  
-  
+  .player-container {
+    width: 95%;
+    margin: 5% 0;
+    display: flex;
+  }
+
+  .video-list{
+    outline: 3px solid red;
+    width: 20%;
+    height: 535px;
+   
+  }
+  .main-show {
+    margin: 0 auto;
+
+  }
   
   /* Nav menu */
   
