@@ -52,8 +52,19 @@
         </section>
         
         <section class="player-container">
-          <iframe class="main-show" width="960" height="540" src="//www.youtube.com/embed/_yopTNk6dUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <section class="video-list"></section>
+          <section>
+            <iframe class="main-show" width="960" height="540" src="//www.youtube.com/embed/_yopTNk6dUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3><%= videos[0].snippet.title %></h3>
+            <h5><%= videos[0].snippet.description %></h5>
+          </section>
+          <ul class="video-list">
+            <% videos.forEach( video => { %>
+              <li class ='video'>
+                <img src=<%=video.snippet.thumbnails.default.url %> /> 
+                <span><%= video.snippet.title %></span>
+              </li>
+            <% }) %>
+          </ul>
         </section>
        
 
@@ -64,7 +75,7 @@
   </div>
 
         <!-- Scripts -->
-        <script src="/assets/js/main.js"></script>
+        <script src="/assets/js/videoFE.js"></script>
     </body>
 
 </html>
