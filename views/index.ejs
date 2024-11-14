@@ -42,10 +42,10 @@
                     <a href="/#episodes">Episodes</a>
                   </li>
                   <li>
-                    <a href="">Merch</a>
+                    <a href="https://www.imdb.com/name/nm2074421/">IMDB</a>
                   </li>
                   <li>
-                    <a href="">Patreon</a>
+                    <a href="https://www.patreon.com/HiStrangeness/membership">Patreon</a>
                   </li>
                 </ul>
             </section>
@@ -131,7 +131,7 @@
                 <% episodes.forEach( el => { %>
                     <li class="episode" >
                         <span class="<%= el.title %>" id="episode-title"><%= el.title %></span>
-                        <span class="episode-length"><%= el.duration %></span>
+                        <span class="episode-length" id="episode-length"><%= el.duration %></span>
                         <span class="source" id="episode-source" ><%= el.audio_url %></span>
                     </li>
                 <% }) %>  

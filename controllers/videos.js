@@ -24,8 +24,6 @@ module.exports = {
             videoObjs.push(object)
            }
             
-    
-      
             res.render('videos.ejs', { videos: videoObjs})
         } catch(err) {
             if(err) {
