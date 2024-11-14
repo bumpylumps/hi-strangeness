@@ -278,7 +278,7 @@
     color: #11061e;
   } */
   
-  .episode:hover {
+  .episode:hover span {
     cursor: grab;
     background-color: antiquewhite;
     color: #11061e;
