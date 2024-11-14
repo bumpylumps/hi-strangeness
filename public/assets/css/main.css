@@ -265,19 +265,18 @@
   .episode{
     border-bottom: 2px solid #69215d;
     width: 100%;
-    padding: 1% 2%;
     display:flex;
-    margin: 2% 0;
-    justify-content: space-between;
   }
   
   .episode span {
     font-size: 1.5rem;
     background-color: inherit;
+    height: 50px;
+    padding: 2%;
 }
-  .episode span:hover {
+  /* .episode span:hover {
     color: #11061e;
-  }
+  } */
   
   .episode:hover {
     cursor: grab;
@@ -285,7 +284,14 @@
     color: #11061e;
   }
 
+  #episode-length {
+    width: 30%;
+    text-align: end;
+  }
 
+  #episode-title {
+    width: 70%;
+  }
 
   #episode-source {
     display: none;

@@ -43,7 +43,6 @@ function loadTrack(src) {
 
 function selectEpisode(event){
 	let target = event.target; //target child element
-	console.log(target)
 	select(target); // select episode to play
 }
 
@@ -54,8 +53,9 @@ function select(ep) {
 
 	document.getElementById('episode-name').style.opacity = 0;
 
-	let src = ep.parentNode.childNodes[5].innerHTML;
-	console.log(src)
+	
+	// update this to target episode source <span>
+	let src = ep.parentNode.childNodes[5].innerText;
 	loadTrack(src)
 	playTrack()
 
