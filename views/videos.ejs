@@ -53,16 +53,18 @@
         
         <section class="player-container">
           <section>
-            <%- videos[0].player.embedHtml %>
+            <iframe id="video_player" width="480" height="270" src=<%- videos[0].srcId %> frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            <h3><%= videos[0].snippet.title %></h3>
-            <h5><%= videos[0].snippet.description %></h5>
+            <h3 class="video_title"><%= videos[0].title %></h3>
+            <h5 class="video_description"><%= videos[0].description %></h5>
           </section>
           <ul class="video-list">
             <% videos.forEach( video => { %>
               <li class ='video'>
-                <img src=<%=video.snippet.thumbnails.default.url %> /> 
-                <span><%= video.snippet.title %></span>
+                <img src=<%= video.thumbnail %> />
+                <span id="video_title"><%= video.title %></span>
+                <span id="source"><%= video.srcId%></span>
+                <span id="description"><%= video.description %></span>
               </li>
             <% }) %>
           </ul>
