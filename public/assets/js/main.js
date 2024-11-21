@@ -43,6 +43,7 @@ function loadTrack(src) {
 
 function selectEpisode(event){
 	let target = event.target; //target child element
+	console.log(target)
 	select(target); // select episode to play
 }
 
@@ -166,3 +167,5 @@ function seekUpdate() {
 
 
 firstTrack(loadTrack)
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

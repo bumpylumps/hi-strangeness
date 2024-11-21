@@ -99,8 +99,8 @@
 }
 
 .player-container iframe{
-  width: 78%;
-  height: 92%;
+  width: 77%;
+  height: 139%;
 }
 
 .player-container h5{
@@ -110,6 +110,8 @@
 
 .video-list {
   width: 90%;
+  min-width: 400px;
+  max-width: 400px;
   height: 535px;
 }
 
@@ -125,7 +127,7 @@
 }
 
   
-  li.video {
+  li.video  {
     margin: 0% -5%;
     margin-top: 0;
     background-color: #69215d;
@@ -133,7 +135,23 @@
     width: 100%;
     /* border: lightyellow; */
 }
+
+li.video:hover span {
+  color:#69215d;
+  background-color:#fffe5a;
+}
+li.video:hover{
+  color:#69215d;
+  background-color:#fffe5a;
+}
   
+span#source, span#description {
+  display: none;
+  width: 0px;
+}
+
+
+
   /* Nav menu */
   
   header {
@@ -405,6 +423,6 @@
 
   #footer {
       width: 100%;
-      margin-top: 14%;
+      margin-top: 24%;
       height: 150px;
   }
