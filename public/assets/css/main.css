@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url("fontawesome-all.min.css");
 
 
 
@@ -100,7 +101,7 @@
 
 .player-container iframe{
   width: 77%;
-  height: 139%;
+  height: 100%;
 }
 
 .player-container h5{
@@ -112,7 +113,9 @@
   width: 90%;
   min-width: 400px;
   max-width: 400px;
-  height: 535px;
+  height: 800px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
   .main-show {
@@ -128,12 +131,11 @@
 
   
   li.video  {
-    margin: 0% -5%;
     margin-top: 0;
+    padding-top: 12%;
     background-color: #69215d;
-    height: 24%;
+    height: 20%;
     width: 100%;
-    /* border: lightyellow; */
 }
 
 li.video:hover span {
@@ -421,8 +423,33 @@ span#source, span#description {
 
   /* Footer */
 
+/*icons */
+
+.icons {
+  list-style: none;
+    display: flex;
+    justify-content: center;
+  margin-bottom: 2%;
+}
+
+.icons li {
+  margin: 0 2%;
+}
+
+.copyright li {
+  text-align: end;
+}
+
   #footer {
       width: 100%;
       margin-top: 24%;
       height: 150px;
+  }
+
+  .socialMedia {
+    margin-top: 7%;
+  }
+
+  .videoFooter {
+    margin-top: 25%;
   }

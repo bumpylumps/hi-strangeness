@@ -8,8 +8,7 @@ module.exports = {
            const data = await response.json()
             const videos = data.items
             let ids = []
-            let videoObjs = []
-            console.log(data.items[0].id)
+            let videoObjs = [];
             /*construct object for videos with: 
             { 
                 title: 
